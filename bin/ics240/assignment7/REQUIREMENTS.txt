@@ -1,0 +1,154 @@
+HYPERLINK "mailto:siva.jasthi@metrostate.edu" siva.jasthi@metrostate.edu
+
+ICS240-Programming with elementary data structures
+
+(all are group) Quiz 7, Assignment 7, Final Project
+
+The final is given a weightage of 150 points. Out of which 1/3 of the score is considered towards Assignment 7 while 2/3 of the 
+score is considered towards the final project for evaluation purposes.
+
+During this final project for ICS240, we will make an effort to produce a production quality framework for playing word search 
+games online (as applets)
+
+See the Word Search Puzzle at http://www.wordgames.com/daily-word-search-easy.html
+
+Play this game to get familiar with the word search puzzle.
+
+
+You will design and develop a framework to play the word search puzzles as part of this assignment. You will be developing an 
+APPLET for this assignment (It is NOT needed to develop an application).
+
+Background:
+
+(1) Assume that you are given a text file consisting of the following fields
+
+Puzzle Id (A string representing the ID of a puzzle)
+Title of the puzzle (String)
+Font to be used to display the words and puzzle grid
+The puzzle words (Some number of words; The number of words can vary; Also, if any words contain spaces, those will be ignored)
+A puzzle grid (that contains the solution as well). Though we focus on 10x10 grids to optimize our implementation, the grid sizes can be different.
+
+
+(2) For example, the above puzzle can be represented in the text file (puzzle.txt) as follows
+
+See ID: 001 below
+
+(3) The puzzle.txt will contain the representation of many puzzles in a single file.
+
+Each puzzle is separated by a horizontal line --------------------------------------------
+
+ID: 001
+Title: Photography1 (Easy)
+Words: BEAN BAG, IMPRESA, LENS, MANUAL, MATT, NIKON, PRISM, ROLL, SENSIA, TONE
+M,M*,U,K,W,X,M*Y,Q,V,
+S*,A*,F,S,L,K,A*,L*,T*,B,
+E*,T*,N,C,P,I*,N*,E*,O*,E,
+N*,T*,R*,G,B,M*,U*,N*,N*,O,
+S*,W.O*,Z.C,P*,A*,S*,E*,V,
+I*,S,L*,E,E,R*,L*,E,K,Y,
+A*,P,L*,W,P.E*,B,F,D,A,
+N*,I*,K*,O*,N*,S*,L,O,U,F,
+B*,E*,A*,N*,B*,A*,G*,W,X,P,
+R,D,S,K,P*,R*,I*,S*,M*,M,
+--------------------------------------------
+
+ID: 002
+Title: Photography2 (Easy)
+Words: BEAN BALL, IMPRESA, LENS, MANUAL, NATE, NIKON, PRISM, ROLL, SENSIA, TONE
+M,N*,U,K,W,X,M*Y,Q,V,
+S*,A*,F,S,L,K,A*,L*,T*,B,
+E*,T*,N,C,P,I*,N*,E*,O*,E,
+N*,E*,R*,G,B,M*,U*,N*,N*,O,
+S*,W.O*,Z.C,P*,A*,S*,E*,V,
+I*,S,L*,E,E,R*,L*,E,K,Y,
+A*,P,L*,W,P.E*,B,F,D,A,
+N*,I*,K*,O*,N*,S*,L,O,U,F,
+B*,E*,A*,N*,B*,A*,L*,L*,X,P,
+R,D,S,K,P*,R*,I*,S*,M*,M,
+
+(4) Though the example shown above presents the words only in horizontal and vertical directions, the words can actually appear in 
+8 logical directions as follows. Your implementation should handle such cases.
+
+0, 1: horizontal forward (east)
+0,-1: horizontal backward (west)
+1, 0: vertical down (south)
+-1, 0: vertical up (north)
+1, 1: diagonal forward down (south east)
+-1,-1: diagonal backwards up (north west)
+1,-1: diagonal backward down (south west)
+-1, 1: diagonal forwards UP (north east)
+
+So, your implementation need to gather the grid selection and from strings in any of the above directions and compare it with the word list. 
+(However, the examples given at the above site appears to be either horizontal or vertical)
+
+(5) Also note that I plan to test your submission with multi-byte characters. So, write your implementation assuming a character can 
+occupy multiple bytes. One quick way to test this requirement is through the following example.
+
+ID: 003
+Title: Photography3 (Multi-Byte)
+Words: BEAN BALL, IMPRESA, LENS, MANUAL, NATE, NIKON, PRISM, ROLL, SENSIA, TONE
+NM,N*,UN,KY,WR,XS,M*Y,Q,V,
+S*,A*,F,S,L,K,A*,L*,T*,B,
+E*,T*,N,C,P,I*,N*,E*,O*,E,
+N*,E*,R*,G,B,M*,U*,N*,N*,O,
+S*,W.O*,Z.C,P*,A*,S*,E*,V,
+IA*,S,L*,E,E,R*,L*,E,K,Y,
+A,P,L*,W,P.E*,B,F,D,A,
+N*,I*,K*,O*,N*,S*,L,O,U,F,
+B*,E*,A*,N*,B*,A*,L*,L*,X,P,
+R,D,S,K,P*,R*,I*,S*,M*,M,
+
+[6] Here is another multi-byte example with real data with two words (మార్టిన్ లూథర్ కింగ్, మేధావి)
+
+
+Design Constraints:
+
+The * in the puzzle.txt is only representational. It should be deleted before you use it.
+
+It is going to be only APPLET that runs on a web browser; Along with your final submission of the source code, 
+please share a URL to the applet which I can use to test.
+
+Some starter files with method signatures are given in ics240final.zip file. Please use those contracts and 
+signatures as a baseline to your implementation. Add additional classes, methods and variables as appropriate. 
+This *.zip file consists of the following files now.
+
+Puzzle.java
+PuzzleCollection.java
+PuzzlePicker.java
+PuzzleConfig.java
+PuzzleTracker.java
+PuzzlePlayerApplet.java
+PuzzleTester.java (applicable to Assignment 7 only)
+Puzzle.txt (the test file)
+
+
+Here is the logical flow of the game
+
+* Pseudo Code:
+
+* 1. Process the URL and set the puzzle ID (if exists) through PuzzlePicker
+* 2. Read the puzzle.txt and populate the PuzzleCollection
+* 4. Get the puzzle to be played based on the puzzleID; if null, get a random puzzle
+* 5. Create a PuzzleTracker object based on the Puzzle
+* 6. Build the GUI gird based on puzzle grid height and width
+* 7. Attach the Listeners to the cells to recognize the MouseUp / MouseDown / MouseMove events
+* 8. Populate the grid content (cells and words) based on puzzle and PuzzleConfig
+* 9. Play the game.
+* 10. Upon completion of the game, put out the gameCompleteMsg and give the option to the user to play the next game
+* 11. Present the next puzzle in the sequence (in the same order the puzzles are present in the input file)
+* 12. Terminate the game if the user doesn't wish to continue or kills the browser
+
+What to submit?:
+
+Assignment 7 (Due date August 5th  6 PM):
+For this assignment 7 (group assignment), you will be submitting the completed implementation so that “PuzzleTester.java” 
+can be run as an application. It is NOT required to submit “PuzzlePlayerApplet.java” which is an applet and has GUI component
+
+(1) A zip file of all *.java files. Here is a sample design discussed in the class.
+
+Final Project (Due date August 12th  9 PM)
+
+(1) A zip file of all *.java files. Here is a sample design discussed in the class.
+(2) Peer Evaluation Work Sheet (Evaluate all your team members including yourself)
+(3) A demo of your submission (I will access the URL you supply from the classroom desktop to get the demo)
+

@@ -1,0 +1,56 @@
+﻿ID: 001
+Title:  Photography1  (Easy)
+Words:  BEAN BAG, IMPRESA, LENS, MANUAL, MATT, NIKON, PRISM, ROLL, SENSIA, TONE
+M,M,U,K,W,X,M,Y,Q,V,
+S,A,F,S,L,K,A,L,T,B,
+E,T,N,C,P,I,N,E,O,E,
+N,T,R,G,B,M,U,N,N,O,
+S,W,O,Z,C,P,A,S,E,V,
+I,S,L,E,E,R,L,E,K,Y,
+A,P,L,W,P,E,B,F,D,A,
+N,I,K,O,N,S,L,O,U,F,
+B,E,A,N,B,A,G,W,X,P,
+R,D,S,K,P,R,I,S,M,M,
+--------------------------------------------
+ID: 002
+Title:  Photography2  (Easy)
+Words:  BEAN BALL, IMPRESA, LENS, MANUAL, NATE, NIKON, PRISM, ROLL, SENSIA, TONE
+M,N,U,K,W,X,M,Y,Q,V,
+S,A,F,S,L,K,A,L,T,B,
+E,T,N,C,P,I,N,E,O,E,
+N,E,R,G,B,M,U,N,N,O,
+S,W,O,Z,C,P,A,S,E,V,
+I,S,L,E,E,R,L,E,K,Y,
+A,P,L,W,P,E,B,F,D,A,
+N,I,K,O,N,S,L,O,U,F,
+B,E,A,N,B,A,L,L,X,P,
+R,D,S,K,P,R,I,S,M,M,
+-------------------------------------------
+ID: 003
+Title:  Photography3  (Multi-Byte)
+Words:  BEAN BALL, IMPRESA, LENS, MANUAL, NATE, NIKON, PRISM, ROLL, SENSIA, TONE
+NM,N,UN,KY,WR,XS,M,Y,Q,V,
+S,A,F,S,L,K,A,L,T,B,
+E,T,N,C,P,I,N,E,O,E,
+N,E,R,G,B,M,U,N,N,O,
+S,W,O,Z,C,P,A,S,E,V,
+IA,S,L,E,E,R,L,E,K,Y,
+A,P,L,W,P,E,B,F,D,A,
+N,I,K,O,N,S,L,O,U,F,
+B,E,A,N,B,A,L,L,X,P,
+R,D,S,K,P,R,I,S,M,M,
+------------------------------------------------ 
+ID: 004
+Title:  Martin Luther King  (Telugu)
+Words:  మార్టిన్ లూథర్ కింగ్,  మేధావి
+గ్,	కొ, 	ల,	మా,	నం,	చే,	తీ,	ళ్ళ,	న,	మై,
+ప,	కిం,	ప,	ను,	ధా,	ర,	గా,	న్న,	తె,	లి,
+రం,	డు,	ర్,	చి,	గ,	కి,	ల,	కి,	మే,	చి,
+క,	మం,	హ,	థ,	చు,	స,	వై,	ధా,	రో,	కుం,
+ద,	చి,	పు,	త,	లూ,	ఉ,	వి,	వ,	మ,	డే,
+మా,	స్థి,	లు,	గిం,	ద్య,	న్,	వే,	నేం,	పు,	రే,
+ప్ర,	పు,	ది,	మ,	ము,	అ,	ర్టి,	సు,	ర్తం,	ఉ,
+లు,	డ,	కా,	తు,	తా,	చె,	క,	మా,	హూ,	త,
+హీ,	రు,	మీ,	ని,	రిం,	ని,	న్ను,	ని,	ము,	మ,
+డు,	డా,	ల,	గు,	కో,	ఇ,	వం,	దే,	నం,	మౌ,
+--------------------------------------------------
